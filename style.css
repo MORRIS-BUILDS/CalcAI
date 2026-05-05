@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  background: black;
+  color: white;
+  font-family: -apple-system;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.app {
+  width: 340px;
+}
+
+#display {
+  width: 100%;
+  height: 70px;
+  font-size: 24px;
+  text-align: right;
+  background: black;
+  color: white;
+  border: none;
+}
+
+.top-buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+button {
+  height: 60px;
+  border-radius: 50%;
+  border: none;
+  background: #333;
+  color: white;
+  font-size: 18px;
+}
+
+.zero {
+  grid-column: span 2;
+  border-radius: 30px;
+}
+
+.scientific {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+}
+
+#history {
+  max-height: 120px;
+  overflow-y: auto;
+  margin-top: 10px;
+}
+
+#graph {
+  margin-top: 10px;
+}
